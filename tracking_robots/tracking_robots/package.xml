@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tracking_robots</name>
+  <version>0.0.0</version>
+  <description>The tracking_robots package</description>
+  <maintainer email="y-lai@todo.todo">y-lai</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <export>
+    <metapackage/>
+  </export>
+
+</package>
