@@ -6,7 +6,7 @@
     <param name="endpoint_topic_name" type="str" value="/robot/limb/right/endpoint_state" />
     <param name="trigger_topic_name" type="str" value="/track/trigger" />
     <param name="rosbag_name" type="str" value="/home/y-lai/$(arg file_name)" />
-    <param name="trigger_buffer" type="int" value="100" />
+    <param name="trigger_buffer" type="int" value="25" />
   </node>
 
 </launch>
