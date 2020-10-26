@@ -1,0 +1,22 @@
+<launch>
+  <arg name="track" default="1" />
+  <arg name="mm_pixel" default="0.4" />
+  <arg name="ymult" default="-1" />
+  <arg name="xmult" default="-1" />
+  <arg name="pubrate" default="25" />
+  <arg name="startrow" default="135" />
+  <arg name="startcol" default="135" />
+
+  <node pkg="show_track_path" type="show_track_path_node" name="show_track_path_node" output="screen" required="true" >
+    <param name="mm_per_pixel" type="double" value="$(arg mm_pixel)" />
+    <param name="img_location" type="str" value="/home/y-lai/test_zju/test_tracks/Track$(arg track)_cropped.png" />
+    <param name="col_multiplier" type="int" value="$(arg ymult)" />
+    <param name="row_multiplier" type="int" value="$(arg xmult)" />
+    <param name="publish_rate" type="int" value="$(arg pubrate)" />
+    <param name="start_row" type="int" value="$(arg startrow)" />
+    <param name="start_col" type="int" value="$(arg startcol)" />
+
+    <param name="endpoint_topic_name" type="str" value="/robot/limb/right/endpoint_state" />
+  </node>
+
+</launch>

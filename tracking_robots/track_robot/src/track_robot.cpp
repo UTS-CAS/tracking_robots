@@ -81,8 +81,8 @@ void track_robot::triggerCB(const track_robot_msgs::TriggerConstPtr &trig)
 
 void track_robot::run()
 {
-  ROS_INFO("Running after a 2 second delay!");
-  ros::Duration(2.0).sleep();
+  ROS_INFO("Running after a 1 second delay!");
+  ros::Duration(1.0).sleep();
   while(ros::ok() && _pnh->ok())
   {
     ros::spinOnce();
